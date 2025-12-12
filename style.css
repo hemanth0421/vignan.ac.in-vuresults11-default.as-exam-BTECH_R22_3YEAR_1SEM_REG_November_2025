@@ -75,35 +75,12 @@ button{
 
 @media (max-width: 600px) {
 
-    /* Shrink the whole results box on mobile */
-    .results {
-        transform: scale(0.85);
-        transform-origin: top center;
-        width: 100%;
-        margin-top: 10px;
+    .results{
+        /* width: 100%; */
+        font-size: 10px;
     }
 
-    /* Make sure flexboxes don't break layout */
-    .htno,
-    .captcha {
-        flex-direction: row;
-        gap: 1rem;
-        justify-content: center;
-    }
-
-    /* Remove the left offset only on mobile */
-    .captcha-type {
-        position: static;
-        width: 120px;
-    }
-
-    .btn {
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .gif > img {
-        width: 250px;
-        height: auto;
+    .top-bar > h2{
+        font-size: 10px;
     }
 }
