@@ -75,49 +75,35 @@ button{
 
 @media (max-width: 600px) {
 
+    /* Shrink the whole results box on mobile */
     .results {
-        width: 95%;
-        padding: 1rem;
+        transform: scale(0.85);
+        transform-origin: top center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Make sure flexboxes don't break layout */
+    .htno,
+    .captcha {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    /* Remove the left offset only on mobile */
+    .captcha-type {
+        position: static;
+        width: 120px;
+    }
+
+    .btn {
+        justify-content: center;
         gap: 1rem;
     }
 
-    .htno,
-    .captcha {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-        width: 100%;
-    }
-
-    .captcha > h3 {
-        padding-right: 0;
-        width: 100%;
-        text-align: left;
-    }
-
-    .captcha-type,
-    .htno input {
-        position: static;
-        width: 100%;
-        max-width: 100%;
-    }
-
-
-    .btn {
-        flex-direction: column;
-        width: 100%;
-        gap: 0.8rem;
-    }
-
-    button {
-        width: 100%;
-        padding: 10px 0;
-    }
-
     .gif > img {
-        width: 80%;
+        width: 250px;
         height: auto;
     }
 }
-
-
